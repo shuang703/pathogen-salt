@@ -22,5 +22,15 @@ pathogen_vim:
     - source: https://tpo.pe/pathogen.vim
     - source_hash: eb4e4f0c8ca51ae15263c9255dfd6094
 
+vimrc:
+  file.append:
+    - name: /home/{{ name }}/.vimrc
+    - text: |
+        execute pathogen#infect()
+        syntax on
+        filetype plugin indent on 
+
+
 {% endfor %}
+
 
