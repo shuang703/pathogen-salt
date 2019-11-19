@@ -1,7 +1,8 @@
 # https://github.com/tpope/vim-pathogen#installation
 
-vim:
-  pkg.installed
+vim_pkg:
+  pkg.installed:
+    - name: vim
 
 {%- for name, user in pillar.get('users', {}).items() %}
 
