@@ -16,6 +16,7 @@ pathogen_vim:
   file.managed:
     - name: /home/{{ name }}/.vim/autoload/pathogen.vim
     - source: https://tpo.pe/pathogen.vim
+    - source_hash: eb4e4f0c8ca51ae15263c9255dfd6094
 
 {% endfor %}
 
