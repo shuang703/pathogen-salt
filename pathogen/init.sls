@@ -10,8 +10,6 @@ vim:
     - user: {{ name }}
     - group: {{ name }}    
     - dir_mode: 755
-    - require_in:
-      - file: pathogen_vim
 
 pathogen_vim:
   file.managed:
