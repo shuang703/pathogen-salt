@@ -5,7 +5,7 @@ vim:
 
 {%- for name, user in pillar.get('users', {}).items() %}
 
-/home/{{name}}/.vim:
+/home/{{name}}/.vim/autoload:
   file.directory:
     - user: {{ name }}
     - group: {{ name }}    
