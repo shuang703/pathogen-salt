@@ -15,8 +15,7 @@ vim_autoload:
 pathogen_vim:
   file.managed:
     - name: /home/{{ name }}/.vim/autoload/pathogen.vim
-    - source: 
-      - https://tpo.pe/pathogen.vim
+    - source: https://tpo.pe/pathogen.vim
 
 {% endfor %}
 
