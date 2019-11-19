@@ -11,6 +11,7 @@ vim_autoload:
     - user: {{ name }}
     - group: {{ name }}    
     - dir_mode: 755
+    - makedirs: True
 
 pathogen_vim:
   file.managed:
